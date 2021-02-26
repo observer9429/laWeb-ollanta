@@ -17,7 +17,21 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
+  overflow-x: hidden;
 }
+
+.elBody{
+  overflow-x: hidden;
+}
+
+#root{
+  overflow-x: hidden;
+}
+
+
+
+
 
 
 .divPrincipal{
@@ -43,30 +57,43 @@ time, mark, audio, video {
   background-color: #EF8979;
   text-align: center;
   font-size: 3rem;
+
   
 }
 
 .listaH{
+  
   grid-area: listah;
   display: flex;
   
 
   background-color: #DBB5B0;
+  
 
 
   
 }
 .elUl{
-  padding: 18px;
-  width: 100vh;
+  
+  padding-left: 10px;
+  
   
   display: flex;
+
   
+  
+}
+
+.elUl :hover{
+
+  font-size: 1.5rem;
 }
 li{
   padding-right: 10vw;
   padding-top: 1rem;
-  min-width: 12rem;
+  
+  overflow-y: hidden;
+  
   
 }
 
@@ -86,19 +113,25 @@ li{
 .panelVista{
   display: flex;
   grid-area: vista;
-  min-height: 73vh;
+  min-height: 100vh;
+  min-width: 100vw;
   
 
 }
 
 img{
   padding: 10px;
+  width: 25vw;
+  height: 25vh;
+  position: center;
   
   
 }
 
 .divBajo{
   display: flex;
+  min-width: 100vw;
+  margin-top: 5px;
 }
 
 
