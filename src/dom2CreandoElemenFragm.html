@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{ /*para que sea global o algo asi*/
+            --yellow-color:#F7DF1E;
+            --dark-color:white; /*//este es el color de fondo, se usa bastante el js*/
+            --negro: BLACK;
+
+        }
+
+        .cards{
+            border:thin solid var(--negro);
+            padding: 1rem;
+        }
+
+        .card{
+            display:inline-block;
+            background-color: var(--negro);
+            color:var(--yellow-color);
+        }
+
+        .card figcaption{
+            padding: 1rem;
+        }
+
+        .rotate-45{
+            transform: rotate(45deg);
+        }
+
+        .rotate-135{
+            transform: rotate(135deg);
+        }
+        .opacity-80{
+            opacity: .8;
+        }
+
+        .sepia{
+            filter:sepia(1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <input type="text" name="nombre" placeholder="Nombre">
+
+    <a class="link-dom" href="dom.html" data-description="Document object Model ZZ"
+     style="background-color: #F7DF1E;  color:#222;"
+      data-id="1">DOM</a>
+    
+    <section class="cards">
+    
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/tech" alt="Tech">
+            <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/animals" alt="Animals">
+            <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/people" alt="People">
+            <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/arch" alt="Arch">
+            <figcaption>Arch</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/nature" alt="Nature">
+            <figcaption>Nature</figcaption>
+        </figure>
+        <template>
+            <figure class="card">
+                <img>
+                <figcaption></figcaption>
+            </figure> 
+        </template>
+    
+    
+    </section>
+
+    <script src="dom2.js" ></script>
+</body>
+</html>

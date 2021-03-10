@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Contactar } from './componentes/Contactar';
 import { ListaHorizontal } from './componentes/ListaHorizontal';
 import { ListaVertical } from './componentes/ListaVertical';
 import { PanelVista } from './componentes/PanelVista';
@@ -7,13 +8,13 @@ import { Titulo } from './componentes/Titulo';
 
 export const WebOllanta = () => {
 
-    const obras=['Aumento del Presupuesto en Educación (3.8 % del PBI)',
+    const obras=['-Aumento del Presupuesto en Educación (3.8 % del PBI)',
 'Instauración del Programa Nacional de Alimentación Escolar “Qali Warma”',
 'Implantación de 13 Centros de Alto Rendimiento',
-'Ampliación de la Red Dorsal Nacional de Fibra Óptica',
-'Ejecución de la construcción del Aeropuerto de Chinchero',
-'Construcción de La Línea 2 del Metro de Lima',
-'Ampliación de la carretera Longitudinal de la Sierra'];
+'-Ampliación de la Red Dorsal Nacional de Fibra Óptica',
+'-Ejecución de la construcción del Aeropuerto de Chinchero',
+'-Construcción de La Línea 2 del Metro de Lima',
+'-Ampliación de la carretera Longitudinal de la Sierra'];
 
     let vida=`Ollanta Moisés Humala Tasso (Lima, 27 de junio de 1962) es un militar retirado y 
     político peruano. Fue presidente de la República de Perú desde el 28 de julio de 2011 hasta el 28 de 
@@ -32,16 +33,15 @@ export const WebOllanta = () => {
     una política de formalización
     de la economía.`,`Desarrollar
     el quinquenio de
-    la transformación de la S alud
-    P ública como un servicio de
+    la transformación de la Salud
+    Pública como un servicio de
     calidad y accesible para todos
     los peruanos`,`Continuar la reforma de la
     educación alcanzando una
     inversión equivalente al 6%
     del PBI cumpliendo así lo
     dispuesto por el Acuerdo
-    Nacional.`,`R
-    educción de la pobreza,
+    Nacional.`,`Reducción de la pobreza,
     mediante el desarrollo de una
     política social focalizada a
     grupos vulnerables y
@@ -49,7 +49,7 @@ export const WebOllanta = () => {
     protección social para todos,
     bajo la estrategia de “Incluir
     para Crecer”.`,`Proteger a todas las personas
-    contra el avance d e la
+    contra el avance de la
     delincuencia y criminalidad
     organizada, incluyendo el
     narcotráfico y terrorismo .
@@ -57,25 +57,37 @@ export const WebOllanta = () => {
     mujeres violentadas y
     poblaciones vulnerables.`];
 
-    const [seccion, setSeccion] = useState('');
+    let vidaWil=`Andahuaylino de nacimiento, a los tres años de edad sus padres lo llevaron a Abancay 
+    donde cursó su educación primaria en la I.E. Armando Bonifaz y la secundaria en el Colegio 
+    Miguel Grau. Pasó luego a Lima donde cursó sus estudios superiores en la Universidad de San Martín de 
+    Porres.
+    Es abogado especializado en Derecho Penal, Penitenciario y Derechos Humanos. Ha sido consultor, 
+    conferencista y asesor de instituciones públicas y privadas en materias de seguridad. También ha 
+    ejercido como profesor de Derecho Penal en varias universidades limeñas.`;
+
     
+
+    const [seccion, setSeccion] = useState('inicio');
+    
+    const [vista, setVista] = useState('inicio');
     
     console.log({seccion})
 
-/*
-    useEffect(()=>{ 
-        console.log('cambió la seccion!');
-    },[seccion]);*/
+    
+   
+    
+
+
     
     return (
         <div className="divPrincipal">
 
  
             <Titulo/>
-            <ListaHorizontal setSeccion={setSeccion}/>
+            <ListaHorizontal  setVista={setVista} setSeccion={setSeccion}/>
             <div className='divBajo'>
-            <ListaVertical laSeccion={seccion} obras={obras} vida={vida} propuestas={propuestas}/>
-            <PanelVista />
+            <ListaVertical laSeccion={seccion} obras={obras} vida={vida} propuestas={propuestas} vidaWil={vidaWil}/>
+            <PanelVista vista={vista}/>
             </div>
 
 
