@@ -1,4 +1,6 @@
 import React from 'react'
+import { Boton } from './Boton';
+import { MovilPanelHamburguesa } from './MovilPanelHamburguesa';
 
 export const Contactar = () => {
 
@@ -10,6 +12,7 @@ export const Contactar = () => {
        // $elDiv.classList.add('conBlock');
 
     }
+    
 
     limpiar();
 
@@ -17,6 +20,9 @@ export const Contactar = () => {
     return (
         
         <>
+
+
+        
             <form className="contact-form addBlock" action="https://formsubmit.co/walt9429@gmail.com" method="POST">
 
             <legend className="addBlock">Envíanos tus comentarios</legend>
@@ -41,6 +47,11 @@ export const Contactar = () => {
             
 
             </form>
+
+         
+
+      
+      
 
             
           </>

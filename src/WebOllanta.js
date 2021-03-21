@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { Boton } from './componentes/Boton';
 import { Contactar } from './componentes/Contactar';
 import { ListaHorizontal } from './componentes/ListaHorizontal';
 import { ListaVertical } from './componentes/ListaVertical';
+import { MovilPanelHamburguesa } from './componentes/MovilPanelHamburguesa';
 import { PanelVista } from './componentes/PanelVista';
 import { Titulo } from './componentes/Titulo';
 
 
 export const WebOllanta = () => {
+
+    
 
     const obras=['-Aumento del Presupuesto en Educación (3.8 % del PBI)',
 'Instauración del Programa Nacional de Alimentación Escolar “Qali Warma”',
@@ -74,14 +78,79 @@ export const WebOllanta = () => {
     console.log({seccion})
 
     
+
+        
+
+        document.addEventListener("DOMContentLoaded",(e)=>{
+
+
+            const elBoton=document.querySelector('.panel-btn');
+        const elPanelMovil=document.querySelector('.panel-movil');
+        const elementosPanelMovil=document.querySelector('.menu-movil a');
+
+        console.log(document.querySelector('.panel-btn'),'91');
+        console.log(elPanelMovil);
+        console.log(elementosPanelMovil);
+
+        
+            document.addEventListener("click",(e)=>{
+
+                //matches recibe selector valiudo de css
+                //en el segundo e target ponemos que tambien funcione en todo el buton y
+                //no solo en los bordes
+                //todo lo que herede del boton, o lo que este contenido en el boton
+                 
+                        if(e.target.matches('.panel-btn') || e.target.matches(`${'.panel-btn'} *`)){//verifica el nombre de la clase
+                            //el target es para identificar el elemento que dispara el evento
+                            //el matches retorna tru si el elemento indicado existe , en caso contrario retorna false
+                            //y el toogle agrega una clase si no la tiene
+                            //y la quita en caso la tenga
+                            document.querySelector('.panel-movil').classList.toggle("is-active");
+                            document.querySelector('.panel-btn').classList.toggle("is-active");//para darle efecto al boton,quitandole
+                            //esa clase o poniendola
+                            
+                           
+                             
+                            
+                        }
+                
+                        //para que se cierre las segunda cara al escoger una opcion del menu 
+                        if(e.target.matches('a')){
+                            document.querySelector('.panel-movil').classList.remove("is-active");//eliminamos
+                             //la que creo que es clase is-active para que se cirre la segunda cara
+                             
+                        }
+                    })
+
+
+
+
+
+
+        })
+
+        
+
+
+
+        
+
+    
+
+
    
     
 
 
     
     return (
-        <div className="divPrincipal">
 
+      <>
+
+        <MovilPanelHamburguesa setVista={setVista} setSeccion={setSeccion}/>
+
+        <div className="divPrincipal">
+          
  
             <Titulo/>
             <ListaHorizontal  setVista={setVista} setSeccion={setSeccion}/>
@@ -90,8 +159,28 @@ export const WebOllanta = () => {
             <PanelVista vista={vista}/>
             </div>
 
+            <Boton />
+
 
 
         </div>
+
+        
+
+        {console.log(document.querySelector('panel-btn'))}
+
+        </>
     )
+
 }
+
+
+
+
+
+
+
+
+
+
+    

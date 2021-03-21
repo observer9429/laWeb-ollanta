@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 
 
-import { WebOllanta } from './WebOllanta';
+
+import { WebOllanta } from './WebOllanta'; 
 
 ReactDOM.render(
+
+  
   
     
     <WebOllanta />,

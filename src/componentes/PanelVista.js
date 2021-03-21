@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Boton } from './Boton';
 import { Contactar } from './Contactar';
 
 export const PanelVista = ({vista}) => {
@@ -247,7 +248,7 @@ const addPreguntasYRespuestas=()=>{
     }
 
     
-    
+   
     
 }
 
@@ -267,25 +268,27 @@ useEffect(()=>{
 
     return (
 
-
+        
        
         <div className="panelVista unido">
 
-             
-
+            
+        
 
            {setTimeout(() => { 
                
                if(vista!=='contactar'){
-               agregaFoto()
+               agregaFoto();
+              
                 }
                }, 20)}
 
            {(vista==='contactar') && <Contactar/>}
            {verlog()}
 
-
+           
+          
         
-        </div> 
+        </div>  
     )
 }
