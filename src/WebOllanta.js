@@ -74,6 +74,8 @@ export const WebOllanta = () => {
     const [seccion, setSeccion] = useState('inicio');
     
     const [vista, setVista] = useState('inicio');
+
+    const [seccionMovil, setSeccionMovil] = useState('inicio');
     
     console.log({seccion})
 
@@ -135,7 +137,30 @@ export const WebOllanta = () => {
 
         
 
-    
+        useEffect(()=>{ 
+
+            setTimeout(() => {
+            
+                const valor=document.querySelector('.panel-btn');
+                const valor2=document.querySelector('listaV');
+
+                
+                const tt=document.getElementsByClassName('.panel-btn');
+        
+                console.log('valor del booleano',valor);
+
+                
+                
+            }, 100);
+
+            
+           
+        if(vista==='wilfredo'){
+            console.log('estas en wilfredo');
+        }
+            
+        
+        },[vista]);
 
 
    
@@ -147,9 +172,10 @@ export const WebOllanta = () => {
 
       <>
 
-        <MovilPanelHamburguesa setVista={setVista} setSeccion={setSeccion}/>
+        <MovilPanelHamburguesa vista={vista} setVista={setVista} setSeccion={setSeccion} 
+        seccionMovil={seccionMovil} setSeccionMovil={setSeccionMovil} />
 
-        <div className="divPrincipal">
+        <div className="divPrincipal firstDiv">
           
  
             <Titulo/>

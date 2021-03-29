@@ -258,12 +258,7 @@ const verlog=()=>{
 }
 
 
-useEffect(()=>{ 
-   
 
-    
-
-},[vista]);
 
 
     return (
