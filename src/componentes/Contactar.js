@@ -40,7 +40,7 @@ export const Contactar = () => {
             title="Tu comentario no debe exceder los 255 caracteres"
             data-pattern="^.{1,255}$" required ></textarea>
 
-            <input className="addBlock" type="hidden" name="_next" value="https://www.youtube.com/watch?v=D5_4Ki7ZT1E&list=RDGMEM2VCIgaiSqOfVzBAjPJm-agVM7Lfx9Z366No&index=3&ab_channel=CumbiasparaRecordar"/>
+            <input className="addBlock" type="hidden" name="_next" value="https://www.youtube.com/watch?v=wGwfXWX4PpI&ab_channel=LatinaNoticias"/>
 
             <input className="addBlock" type="submit" value="Enviar"/>
 

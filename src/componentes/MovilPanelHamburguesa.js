@@ -213,7 +213,7 @@ console.log($verPanel.classList.contains('divPrincipalSecundario'));
                     setVista(V=>('propuestas'));
 
                     pon('propuestas');
-            }}>Propuestas 2021-2026</a>
+            }}>Propuestas 2021</a>
 
 
             <a className='lasA' href="#seccion6" onClick={(e)=>{

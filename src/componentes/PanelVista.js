@@ -36,9 +36,9 @@ const textoVistaPropuestas=['Mejora en educación','Reducción de la criminalida
 
     //poreguntas y resupuestaS
 
-    const preguntas=[`¿Qué reformas se deben impulsar para que la ciudadanía recobre la confianza en la policía?`,
-                    `¿Qué proyectos propone para evitar las largas demoras en los procesos contra funcionarios públicos
-                     por corrupción?`,`¿Cómo fomentar el empleo formal desde el Congreso?`];
+    const preguntas=[`1.- ¿Qué reformas se deben impulsar para que la ciudadanía recobre la confianza en la policía?`,
+                    `2.-¿Qué proyectos propone para evitar las largas demoras en los procesos contra funcionarios públicos
+                     por corrupción?`,`3.- ¿Cómo fomentar el empleo formal desde el Congreso?`];
 
     const respuestas=[`Lo primero debe ser fortalecer el brazo más importante que tiene el Estado para la 
     lucha contra la inseguridad, que es la Policía Nacional. En estos tiempos, ha sido maltratada y rescatar 
@@ -210,7 +210,7 @@ if(vista==='wilfredo'){
 
 }
 
-let elH1=['Wilfredo exponiendo sus propuestas'];
+let elH1=['Wilfredo respondiendo tus dudas'];
 
 const addPreguntasYRespuestas=()=>{
 
@@ -221,6 +221,7 @@ const addPreguntasYRespuestas=()=>{
     $elDiv.classList.add('conBlock');
 
     const $elH1=document.createElement('p');
+    $elH1.classList.add('elpAnuncio');
     const $textoH1=document.createTextNode(elH1[0]);
     $elH1.appendChild($textoH1);
 

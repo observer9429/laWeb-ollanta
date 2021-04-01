@@ -60,7 +60,7 @@ export const ListaHorizontal = ({setVista,setSeccion}) => {
                     setSeccion(v=>'propuestas')
 
                     setVista(V=>('propuestas'));
-                }}>Propuestas 2021-2026</li>
+                }}>Propuestas 2021</li>
 
                 <li className='liH' onClick={()=>{
                     setSeccion(v=>'wilfredo')
