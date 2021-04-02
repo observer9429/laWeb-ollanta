@@ -313,11 +313,13 @@ time, mark, audio, video {
 
   .elBody{
     overflow-x: hidden;
+    
   }
   
   #root{
     overflow-x: hidden;
-    max-width: 100vw;
+    
+    
   }
   
 
@@ -428,6 +430,8 @@ time, mark, audio, video {
       "listav vista"; 
     
       border:#E62525 3px solid;
+
+      overflow-y: hidden;
   }
 
   .divPrincipalSecundario{
@@ -445,6 +449,8 @@ time, mark, audio, video {
       min-height: 100vh;
 
       border:#E62525 3px solid;
+
+      
 
   }
   
@@ -515,9 +521,7 @@ overflow-wrap: break-word;
 
 
 
-      .nada{
-
-      }
+      
   
   .elUl{
     

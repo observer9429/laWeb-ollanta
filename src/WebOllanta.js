@@ -22,9 +22,9 @@ export const WebOllanta = () => {
 
     let vida=`Ollanta Moisés Humala Tasso (Lima, 27 de junio de 1962) es un militar retirado y 
     político peruano. Fue presidente de la República de Perú desde el 28 de julio de 2011 hasta el 28 de 
-    julio de 2016, tras ser candidato por la alianza electoral Gana Perú en las elecciones generales de 2011, 
-    ealizadas el 10 de abril. Pasó a la segunda vuelta, realizada el 5 de junio, al no haber superado el 50 %,
-    o mismo que Keiko Fujimori y venció al conseguir el 51,45 % de los votos válidos.2​ 
+    julio de 2016, tras ser candidato por la alianza electoral de Gana Perú en las elecciones generales de 2011, 
+    realizadas el 10 de abril. Pasó a la segunda vuelta, realizada el 5 de junio, al no haber superado el 50 %,
+    lo mismo que Keiko Fujimori , a la cual venció al conseguir el 51,45 % de los votos válidos.
     Humala ingresó en la palestra política cuando protagonizó junto a su hermano Antauro el levantamiento de Locumba (Tacna), manifestándose en contra del gobierno de Alberto Fujimori. Más tarde fundó junto a su esposa, el Partido Nacionalista Peruano.`;
 
 
